@@ -1,8 +1,12 @@
-#include "CpuMetrics.h";
+#pragma once
+
+#include "CpuInfo.h";
+#include "CpuLiveMetrics.h";
 #include "MemoryMetrics.h";
 
 struct SystemMetrics
 {
-    CpuMetrics cpuMetrics{};
+    CpuInfo cpuInfo{};
+    CpuLiveMetrics cpuMetrics{};
     MemoryMetrics memoryMetrics{};
-}
+};
